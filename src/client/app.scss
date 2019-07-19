@@ -1,10 +1,21 @@
+@import './utilities/variables.scss';
+
 $primary-color: black;
 
+* {
+  font-family: $primary-font;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
 h1 {
-  color: $primary-color;
+  color: $primary-font-color-dark;
+  font-family: $header-font;
 }
 
 body {
-  text-align: center;
   margin: auto;
+  background-color: #F2F2F2;
 }

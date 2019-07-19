@@ -1,0 +1,34 @@
+@import '../../utilities/variables.scss';
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 370px;
+
+  .item__text {
+    font-size: $small-paragraph-font-size;
+  }
+
+  .item__row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .item__title {
+      font-weight: bold;
+      font-style: italic;
+      margin-bottom: 0;
+    }
+    .item__price {
+      font-weight: bold;
+      font-style: italic;
+      margin-bottom: 0;
+    }
+  }
+  .item__row2 {
+    .item__description {
+      margin-top: 0;
+      color: $secondary-font-color-dark;
+    }
+  }
+
+}

@@ -1,0 +1,46 @@
+@import '../../utilities/variables.scss';
+
+$jumbotron-height: 100vh;
+$jumbotron-width: 100%;
+$logo-font-size: 8rem;
+
+.jumbotron {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("/src/client/assets/pictures/jumbotron.png");
+  background-size: cover;
+  height: $jumbotron-height;
+  width: $jumbotron-width;
+
+  .jumbotron__text-container {
+
+  }
+
+  .jumbotron__title {
+    text-align: center;
+    color: $primary-font-color-light;
+    font-family: $logo-font;
+    font-size: $logo-font-size;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+  }
+  .jumbotron__headline {
+    color: $primary-font-color-light;
+    font-size: 1.5rem;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,26 @@
+@import '../../utilities/variables.scss';
+
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px;
+  background-color: $tertiary-color;
+
+  .social-media-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    .social-media-icon {
+      height: 50px;
+      padding: 0 50px 30px 50px;
+    }
+  }
+
+  .footer__text {
+    font-size: $small-paragraph-font-size;
+    color: $primary-font-color-light;
+  }
+}

@@ -1,3 +1,10 @@
 /*Top level scss file. Import all other files into here*/
 
-@import "app.scss"
+
+@import "app.scss";
+@import "./screens/Home/home.scss";
+@import "./components/Jumbotron/jumbotron.scss";
+@import "./components/CustomNavbar/custom-navbar.scss";
+@import "./components/MenuItem/menu-item.scss";
+@import "./components/NewsItem/news-item.scss";
+@import "./components/Footer/footer.scss";

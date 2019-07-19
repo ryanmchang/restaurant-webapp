@@ -1,0 +1,167 @@
+@import '../../utilities/variables.scss';
+
+.container {
+
+  .section {
+    padding: 120px 0 120px 0;
+
+    .section__header {
+      margin-top: 0;
+      font-size: $header-font-size;
+      font-weight: bold;
+    }
+    .description {
+      font-size: $small-paragraph-font-size;
+      color: $secondary-font-color-dark;
+    }
+  }
+    /////////////////BREAKDOWN/////////////////////////////
+  .breakdown-section {
+    background-color: $secondary-color;
+    .breakdown__header {
+      text-align: center;
+    }
+    .breakdown__block-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      .breakdown__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 300px;
+        margin: 0 30px 0 30px;
+
+
+        .breakdown-icon {
+          max-height: 100px;
+          max-width: 100px;
+        }
+        .breakdown__text-block {
+          h1 {
+            font-size: 2.2rem;
+          }
+        }
+      }
+    }
+  @media screen and (max-width: 1000px) {
+    .breakdown__header {
+      margin-left: 0;
+    }
+
+    .breakdown__block-container {
+      flex-direction: column;
+      .breakdown__block {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        width: 80%;
+        .breakdown-icon {
+          margin: 5% 20px 0 0;
+        }
+      }
+    }
+  }
+
+
+
+  }
+  /////////OUR STORY//////////////////////////////////
+  .story-section {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+
+    .burger-img {
+      max-height: 700px;
+      object-fit: scale-down;
+      position: relative;
+    }
+    .story__text-container {
+      margin: 100px 0 0 100px;
+      position: relative;
+
+      .story__description {
+        max-width: 650px;
+      }
+      button {
+        margin: 30px 0 30px 0;
+        background-color: $primary-color;
+        font-size: $small-paragraph-font-size;
+        color: $tertiary-color;
+        height: 50px;
+        width: 200px;
+        border-style: solid;
+        border-width: 3px;
+        border-color: $tertiary-color;
+      }
+    }
+  }
+    @media screen and (max-width: 1120px) {
+      .story-section {
+        padding: 120px 0 120px 0;
+        flex-direction: column;
+        .story__text-container { margin: 0 30px 0 30px; }
+      }
+      .burger-img {display: none;}
+    }
+
+  ///////////////MENU////////////////////////////////
+  .menu-section {
+    background-color: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .menu__header {
+      margin-top: 0;
+    }
+    .menu-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      .menu__column {
+        margin: 0 90px 0 90px;
+      }
+    }
+    @media screen and (max-width: 850px) {
+      .menu-container { flex-direction: column; }
+    }
+
+  }
+
+  /////////OPENING TIMES////////////////////////////////
+  .info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .info__description {
+      margin: 5px 0 5px 0;
+      font-weight: bold;
+    }
+  }
+
+  //////////THE LATEST/////////////////////////////////
+  .latest-section {
+    background-color: $secondary-color;
+    .latest__header {
+      text-align: center;
+    }
+    .news-item-container {
+      margin-top: 100px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    @media screen and (max-width: 1100px) {
+      .news-item-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}

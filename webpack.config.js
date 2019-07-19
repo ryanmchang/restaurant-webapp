@@ -24,15 +24,22 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.scss$/,
-        loaders: ["style-loader", "css-loader", "sass-loader"]
+        loaders: ["style-loader", "css-loader", "sass-loader"],
       },
       {
         test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-        loader: 'url-loader?limit=100000'
+        /*use: [{
+                loader: 'url-loader',
+                options: {
+                    limit: 8000, // Convert images < 8kb to base64 strings
+                    name: 'assets/pictures/[hash]-[name].[ext]'
+                }
+            }]*/
+        loader: 'url-loader',
       }
     ]
   },
