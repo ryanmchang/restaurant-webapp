@@ -3,8 +3,16 @@
 
 @import "app.scss";
 @import "./screens/Home/home.scss";
+@import "./screens/OurStory/our-story.scss";
+
+@import "./screens/Menu/menu.scss";
+@import "./screens/Locations/locations.scss";
+@import "./screens/ContactUs/contact-us.scss";
+
+
 @import "./components/Jumbotron/jumbotron.scss";
 @import "./components/CustomNavbar/custom-navbar.scss";
 @import "./components/MenuItem/menu-item.scss";
 @import "./components/NewsItem/news-item.scss";
 @import "./components/Footer/footer.scss";
+@import "./components/LocationItem/location-item.scss";

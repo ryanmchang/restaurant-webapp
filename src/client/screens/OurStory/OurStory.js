@@ -3,19 +3,13 @@ import Jumbotron from '../../components/Jumbotron/Jumbotron.js';
 import CustomNavbar from '../../components/CustomNavbar/CustomNavbar.js';
 import Footer from '../../components/Footer/Footer.js';
 
-import meat from '../../assets/icons/meat.png';
-import sauce from '../../assets/icons/sauce.png';
-import topping from '../../assets/icons/topping.png';
-import hamburger from '../../assets/pictures/hamburger.png';
-
 import facebook from '../../assets/icons/facebook.png';
 import instagram from '../../assets/icons/instagram.png';
 import twitter from '../../assets/icons/twitter.png';
 
-import beers from '../../assets/pictures/beers.png';
-import dough from '../../assets/pictures/dough.png';
-import serveBurgers from '../../assets/pictures/serve_burgers.png';
-import restaurantInterior from '../../assets/pictures/restaurant_interior.png';
+import burgers from '../../assets/pictures/4burgers.png';
+import spices from '../../assets/pictures/spices.png';
+
 
 export default class OurStory extends Component {
 
@@ -24,10 +18,21 @@ export default class OurStory extends Component {
 
   render() {
     return (
-      <div className="container">
-        <CustomNavbar/>
-        <img src=""/>
-        <h1>OUR STORY</h1>
+      <div className="story-container">
+        <CustomNavbar backgroundOn={true}/>
+        <div className="story-grid">
+          <div className="title-description-container" id="story__text1">
+            <h1 className="section__header">Our Story</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+          </div>
+          <img src={spices} className="story__img" id="story__img1"/>
+          <img src={burgers} className="story__img" id="story__img2"/>
+          <div className="title-description-container" id="story__text2">
+            <h1 className="section__header">What our Burgers are About</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+          </div>
+        </div>
+        <Footer/>
       </div>
     );
   }

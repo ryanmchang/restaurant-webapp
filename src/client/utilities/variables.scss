@@ -14,3 +14,8 @@ $header-font-size: 4rem;
 $subheader-font-size: 0;
 $large-paragraph-font-size: 1.7rem;
 $small-paragraph-font-size: 1.4rem;
+
+@mixin header {
+  font-size: $header-font-size;
+  font: $header-font;
+}

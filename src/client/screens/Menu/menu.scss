@@ -1,0 +1,9 @@
+@import '../../utilities/variables.scss';
+
+.header {
+  @include header;
+  text-align: center;
+}
+
+.menu-container {
+}

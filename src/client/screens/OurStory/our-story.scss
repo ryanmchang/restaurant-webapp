@@ -1,57 +1,48 @@
 @import '../../utilities/variables.scss';
 
-.container {
 
-  .section {
-    padding: 120px 0 120px 0;
+.story-container {
+  .story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "text1 image1"
+      "image2 text2";
 
-    .section__header {
-      margin-top: 0;
-      font-size: $header-font-size;
-      font-weight: bold;
-    }
-    .description {
-      font-size: $small-paragraph-font-size;
-      color: $secondary-font-color-dark;
-    }
-  }
-  /////////OUR STORY//////////////////////////////////
-  .story-section {
-    display: flex;
-    flex-direction: row;
-    padding: 0px;
+    .title-description-container {
+      padding: 30px;
 
-    .burger-img {
-      max-height: 700px;
-      object-fit: scale-down;
-      position: relative;
-    }
-    .story__text-container {
-      margin: 100px 0 0 100px;
-      position: relative;
-
-      .story__description {
-        max-width: 650px;
+      h1 {
+        font-size: $header-font-size;
+        font-weight: bold;
       }
-      button {
-        margin: 30px 0 30px 0;
-        background-color: $primary-color;
+      p {
         font-size: $small-paragraph-font-size;
-        color: $tertiary-color;
-        height: 50px;
-        width: 200px;
-        border-style: solid;
-        border-width: 3px;
-        border-color: $tertiary-color;
       }
     }
+    .story__img {
+      max-height: 100%;
+      min-height: 100%;
+      max-width: 100%;
+      min-width: 100%;
+      object-fit: cover;
+    }
+    #story__text1 { grid-area: text1; }
+    #story__text2 { grid-area: text2; }
+    #story__img1 { grid-area: image1; }
+    #story__img2 { grid-area: image2; }
   }
-    @media screen and (max-width: 1120px) {
-      .story-section {
-        padding: 120px 0 120px 0;
-        flex-direction: column;
-        .story__text-container { margin: 0 30px 0 30px; }
-      }
-      .burger-img {display: none;}
-    }
+}
+
+@media screen and (max-width: 1000px) {
+  .story-container > .story-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "text1"
+      "image1"
+      "text2"
+      "image2";
+  }
+
 }

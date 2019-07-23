@@ -1,0 +1,14 @@
+@import '../../utilities/variables.scss';
+
+.header {
+  @include header;
+  text-align: center;
+}
+
+.location-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
