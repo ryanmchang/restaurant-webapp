@@ -6,4 +6,24 @@
 }
 
 .menu-container {
+  background-color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  //align-items: center;
+  .menu__header {
+    margin-top: 0;
+  }
+  .menu-items-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+    .menu__column {
+      margin: 0 90px 0 90px;
+    }
+  }
+  @media screen and (max-width: 850px) {
+    .menu-items-container { flex-direction: column; }
+  }
+
 }

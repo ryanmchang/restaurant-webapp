@@ -9,13 +9,16 @@
     grid-template-areas:
       "text1 image1"
       "image2 text2";
+    overflow: hidden;
 
     .title-description-container {
-      padding: 30px;
+      align-self: center;
+      padding: 25px;
 
       h1 {
         font-size: $header-font-size;
         font-weight: bold;
+        margin: 0 0 10px 0;
       }
       p {
         font-size: $small-paragraph-font-size;
@@ -23,9 +26,9 @@
     }
     .story__img {
       max-height: 100%;
-      min-height: 100%;
+      //min-height: 100%;
       max-width: 100%;
-      min-width: 100%;
+      //min-width: 100%;
       object-fit: cover;
     }
     #story__text1 { grid-area: text1; }
