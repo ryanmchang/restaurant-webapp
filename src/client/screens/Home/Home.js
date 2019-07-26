@@ -14,10 +14,7 @@ import facebook from '../../assets/icons/facebook.png';
 import instagram from '../../assets/icons/instagram.png';
 import twitter from '../../assets/icons/twitter.png';
 
-/*import beers from '../../assets/pictures/beers.png';
-import dough from '../../assets/pictures/dough.png';
-import serveBurgers from '../../assets/pictures/serve_burgers.png';
-import restaurantInterior from '../../assets/pictures/restaurant_interior.png';*/
+import restaurantInterior from '../../assets/pictures/restaurant_interior.png';
 
 export default class Home extends Component {
 
