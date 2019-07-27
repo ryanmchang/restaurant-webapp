@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const outputDirectory = 'dist';
 
@@ -40,8 +41,23 @@ module.exports = {
                     name: 'assets/pictures/[hash]-[name].[ext]'
                 }
             }]*/
-        loader: 'url-loader',
+        //loader: 'url-loader',
+
+        use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[path][name].[ext]',
+                            context: path.resolve(__dirname, "src/"),
+                            outputPath: 'dist/',
+                            publicPath: '../',
+                            useRelativePaths: true
+                        }
+                    }
+                ]
       }
+
+
     ]
   },
   devServer: {
@@ -57,6 +73,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './public/index.html',
       favicon: './public/favicon.ico'
+    }),
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+      chunkFilename: "[id].css",
     })
   ]
 };
