@@ -32,6 +32,8 @@ module.exports = {
         test: /\.scss$/,
         loaders: ["style-loader", "css-loader", "sass-loader"],
       },
+
+
       {
         test: /\.(png|woff|woff2|eot|ttf|svg)$/,
         /*use: [{
@@ -50,7 +52,7 @@ module.exports = {
                             //name: '[path][name].[ext]',
                             //context: path.resolve(__dirname, "src/"),
                             //outputPath: 'dist/',
-                            //publicPath: '../',
+                            //publicPath: '',
                             useRelativePaths: true
                         }
                     }

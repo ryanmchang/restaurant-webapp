@@ -14,7 +14,7 @@ import facebook from '../../assets/icons/facebook.png';
 import instagram from '../../assets/icons/instagram.png';
 import twitter from '../../assets/icons/twitter.png';
 
-import restaurantInterior from '../../assets/pictures/restaurant_interior.png';
+import restaurantInterior from '/mnt/c/Users/ryanm/Documents/projects/personal-web/src/client/assets/pictures/restaurant_interior.png';
 
 export default class Home extends Component {
 
