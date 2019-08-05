@@ -7,7 +7,8 @@ export default class NewsItem extends Component {
 
   render() {
     const bgStyle = {
-      backgroundImage: "url(/src/client/assets/pictures/" + this.props.image + ")",
+      //backgroundImage: "url(/src/client/assets/pictures/" + this.props.image + ")",
+      backgroundImage: "url(/dist/client/assets/pictures/" + this.props.image + ")",
     }
     return (
       <div className="news-container" style={bgStyle}>
