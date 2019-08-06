@@ -34,6 +34,10 @@ module.exports = {
       },
 
 
+      // {
+      //   test: /\.(png|jpg)$/,
+      //   loader: 'url-loader'
+      // },
       {
         test: /\.(png|woff|woff2|eot|ttf|svg)$/,
         /*use: [{
@@ -49,15 +53,15 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                            //name: '[path][name].[ext]',
+                            name: '[path][name].[ext]',
                             //context: path.resolve(__dirname, "src/"),
-                            //outputPath: 'dist/',
-                            //publicPath: '',
-                            useRelativePaths: true
+                            //outputPath: 'img/',
+                           //publicPath: '/src/client/assets/',
+                            useRelativePaths: true,
                         }
                     }
                 ]
-      }
+      },
 
 
     ]

@@ -3,12 +3,13 @@ import React, { Component } from 'react';
 export default class NewsItem extends Component {
 
   componentDidMount() {
+    // const container = document.querySelector(".news-container");
+    // container.style.backgroundImage = "url(/src/client/assets/pictures/" + this.props.image + ")";
   }
 
   render() {
     const bgStyle = {
-      //backgroundImage: "url(/src/client/assets/pictures/" + this.props.image + ")",
-      backgroundImage: "url(/dist/client/assets/pictures/" + this.props.image + ")",
+      backgroundImage: `url(${this.props.image})`,
     }
     return (
       <div className="news-container" style={bgStyle}>

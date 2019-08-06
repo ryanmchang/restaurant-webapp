@@ -10,9 +10,9 @@ import sauce from '../../assets/icons/sauce.png';
 import topping from '../../assets/icons/topping.png';
 import hamburger from '../../assets/pictures/hamburger.png';
 
-import facebook from '../../assets/icons/facebook.png';
-import instagram from '../../assets/icons/instagram.png';
-import twitter from '../../assets/icons/twitter.png';
+import dough from '../../assets/pictures/dough.png';
+import serveBurgers from '../../assets/pictures/serve_burgers.png';
+import beers from '../../assets/pictures/beers.png';
 
 import restaurantInterior from '../../assets/pictures/restaurant_interior.png';
 
@@ -113,9 +113,9 @@ export default class Home extends Component {
         <div className="section latest-section">
           <h1 className="section__header latest__header">The Latest</h1>
           <div className="news-item-container">
-            <NewsItem title="Behind Our Ingredients" image="dough.png"/>
-            <NewsItem title="Making a Culture of Excellence" image="serve_burgers.png"/>
-            <NewsItem title="Meet Some of the Regulars" image="beers.png"/>
+            <NewsItem title="Behind Our Ingredients" image={dough}/>
+            <NewsItem title="Making a Culture of Excellence" image={serveBurgers}/>
+            <NewsItem title="Meet Some of the Regulars" image={beers}/>
           </div>
 
         </div>
