@@ -11,6 +11,9 @@ class CustomNavbar extends Component {
 
   componentDidMount() {
     this.setBackground();
+
+    document.documentElement.style.overflow = 'auto';
+    document.body.scroll = "yes"; // ie only
   }
 
   setBackground = () => {

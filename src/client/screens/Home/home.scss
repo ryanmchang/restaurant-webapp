@@ -128,7 +128,10 @@
       }
     }
     @media screen and (max-width: 850px) {
-      .menu-container { flex-direction: column; }
+      .menu-container {
+        flex-direction: column;
+        .menu__column { margin: 0 15px 0 15px; }
+      }
     }
 
   }
@@ -138,9 +141,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 
     .info__description {
-      margin: 5px 0 5px 0;
+      margin: 5px 10px 5px 10px;
       font-weight: bold;
     }
   }

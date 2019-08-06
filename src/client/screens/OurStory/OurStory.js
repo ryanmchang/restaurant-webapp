@@ -3,6 +3,9 @@ import Jumbotron from '../../components/Jumbotron/Jumbotron.js';
 import CustomNavbar from '../../components/CustomNavbar/CustomNavbar.js';
 import Footer from '../../components/Footer/Footer.js';
 
+import spices from '../../assets/pictures/spices.png';
+import burgers from '../../assets/pictures/4burgers.png';
+
 export default class OurStory extends Component {
 
   componentDidMount() {

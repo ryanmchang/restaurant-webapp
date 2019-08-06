@@ -3,6 +3,7 @@
 $jumbotron-height: 100vh;
 $jumbotron-width: 100%;
 $logo-font-size: 8rem;
+$mobile-logo-font-size: 6.7rem;
 
 .jumbotron {
   display: flex;
@@ -42,5 +43,12 @@ $logo-font-size: 8rem;
   }
   100% {
     opacity: 1;
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  .jumbotron > .jumbotron__text-container > .jumbotron__title {
+    font-size: $mobile-logo-font-size;
   }
 }

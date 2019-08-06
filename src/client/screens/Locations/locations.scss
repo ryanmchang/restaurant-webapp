@@ -1,5 +1,9 @@
 @import '../../utilities/variables.scss';
 
+.location-content-main {
+  padding: 0 5px 0 5px;
+}
+
 .header {
   @include header;
   text-align: center;
@@ -11,4 +15,5 @@
   justify-items: center;
   align-items: center;
   margin-bottom: 50px;
+  grid-gap: 8px 8px;
 }
