@@ -15,6 +15,7 @@
     flex-direction: row;
     .social-media-icon {
       height: 50px;
+      width: 50px;
       padding: 0 50px 30px 50px;
     }
   }
@@ -22,5 +23,13 @@
   .footer__text {
     font-size: $small-paragraph-font-size;
     color: $primary-font-color-light;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .footer > .social-media-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
